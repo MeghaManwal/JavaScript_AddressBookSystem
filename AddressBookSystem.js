@@ -98,7 +98,7 @@ for (var i = 0; i < contactsArr.length; i++) {
         console.log(contactsArr[i]);
 }
 
-//To update the Entries in the array
+//To update the contact in the array
 let result = contactsArr.filter((e) => e._firstname == 'Hope');
 console.log(result);
 
@@ -108,4 +108,7 @@ if (result && result.length > 0) {
 }
 console.log("New Array after Updation: ",contactsArr);
 
+//To Delete the contact from the array
+contactsArr = contactsArr.filter((e) => e._firstname != 'Hope');
+console.log("New Array After Delete: ",contactsArr);
 
