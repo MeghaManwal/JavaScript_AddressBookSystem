@@ -115,3 +115,11 @@ console.log("New Array After Delete: ",contactsArr);
 //UC-6 To find the Number of contacts in the array
 let numOfContacts = contactsArr.length;
 console.log("Number of Contacts in the AddressBook: "+numOfContacts);
+
+//UC-8 To check for the Person in the Address Book 
+let checkCity = contactsArr.filter((e) => e._city == 'Kansas');
+console.log("Contact from the addressBook as per Given city: ",checkCity);
+
+let checkState = contactsArr.filter((e) => e._state == 'Kentucky');
+console.log("Contact from the addressBook as per given state: ",checkState);	
+
